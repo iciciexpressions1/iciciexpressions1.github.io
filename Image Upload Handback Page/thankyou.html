@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>ICICI BANK Credit Cards - Khayaal aapka</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <img src="images/top.jpg" width="1200" class="img-responsive" height="113" border="0" alt="">
+        </div>
+ 
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+		<div class="col-md-12 col-xs-12 pull-left toHome vert-offset-top-1"><a href="http://www.icicibank.com"><img src="images/backToHome.png" width="135" height="31" border="0" alt="Back to Home"></a></div>
+		<div class="clearfix "></div>
+		<div class="col-md-3 col-xs-1"></div>
+		<div class="box col-md-6 col-xs-10 vert-offset-top-3 text-center">
+			The Unique Image Code for the image uploaded is :
+			<span class="code">Image Code</span>
+		</div>
+		<div class="col-md-3 col-xs-1"></div>
+		<div class="clearfix "></div>
+		<div class="col-md-3 col-xs-1"></div>
+		<div class="instructions col-md-6 col-xs-10 vert-offset-top-3 text-center">
+			Please mention this image code in the Image Code field on the Credit Card Application Form for Expressions Credit Card.
+		</div>
+		<div class="col-md-3 col-xs-1"></div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+
+		$(document).ready(function() {
+
+			var CardImageId = getUrlParameter('CardImageId');
+
+			$(".code").html(CardImageId);
+		});
+
+
+//some functions
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+
+	</script>
+
+
+  </body>
+</html>
+
+
